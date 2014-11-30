@@ -6,10 +6,84 @@ body {
   line-height: 18px;
 }
 
-p, ol, ul, td {
+p, ol, ul {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+}
+
+div.header {
+  position: relative;
+  width: 100%;
+  height:200px;
+  overflow: hidden;
+}
+
+
+div#container {
+  position: relative;
+  margin-left: 40px;
+
+}
+
+img.recipe-images {
+  width: 140px;
+}
+
+th {
+  font-family: verdana, arial, helvetica, sans-serif;
+  width: 10%;
+  text-align: left;
+}
+
+th.vegetarian {
+  font-family: verdana, arial, helvetica, sans-serif;
+  width: 3%;
+  text-float: left;
+}
+
+th.normal {
+  font-family: verdana, arial, helvetica, sans-serif;
+  width: 8%;
+  text-float: left;
+}
+
+th.big {
+  font-family: verdana, arial, helvetica, sans-serif;
+  width: 20%;
+  text-float: left;
+}
+
+
+td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  width: 10%;
+  text-float: left;
+}
+
+td.normal {
+  font-family: verdana, arial, helvetica, sans-serif;
+  width: 8%;
+  text-float: left;
+}
+
+td.big {
+  font-family: verdana, arial, helvetica, sans-serif;
+  width: 20%;
+  text-float: left;
+}
+
+
+td.vegetarian {
+  font-family: verdana, arial, helvetica, sans-serif;
+  width: 3%;
+  text-float: left;
+}
+
+td.edit-buttons {
+  font-family: verdana, arial, helvetica, sans-serif;
+  width: 3%;
+  text-float: left;
 }
 
 pre {

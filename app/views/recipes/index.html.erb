@@ -1,16 +1,17 @@
-<h1>Listing recipes</h1>
+
+<h1>Code First: Girls awesome recipes</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Contributor</th>
-      <th>Cookingtime</th>
-      <th>Vegetarian</th>
-      <th>Image</th>
-      <th>Ingredients</th>
-      <th>Instructions</th>
-      <th>Inspiration</th>
+      <th class="normal">Title</th>
+      <th class="normal">Contributor</th>
+      <th class="normal">Cookingtime</th>
+      <th class="vegetarian">Veggie</th>
+      <th class="normal">Image</th>
+      <th class="big">Ingredients</th>
+      <th class="big">Instructions</th>
+      <th class="normal">Inspiration</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,17 +19,17 @@
   <tbody>
     <% @recipes.each do |recipe| %>
       <tr>
-        <td><%= recipe.title %></td>
-        <td><%= recipe.contributor %></td>
-        <td><%= recipe.cookingtime %></td>
-        <td><%= recipe.vegetarian %></td>
-        <td><%= recipe.image %></td>
-        <td><%= recipe.ingredients %></td>
-        <td><%= recipe.instructions %></td>
-        <td><%= recipe.inspiration %></td>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="normal"><%= recipe.title %></td>
+        <td class="normal"><%= recipe.contributor %></td>
+        <td class="normal"><%= recipe.cookingtime %></td>
+        <td class="vegetarian"><%= recipe.vegetarian %></td>
+        <td class="normal"><img class="recipe-images" src="<%= recipe.image %>"></td>
+        <td class="big"><%= recipe.ingredients %></td>
+        <td class="big"><%= recipe.instructions %></td>
+        <td class="normal"><a href="<%= recipe.inspiration %>">View</a></td>
+        <td class="edit-buttons"><%= link_to 'Show', recipe %></td>
+        <td class="edit-buttons"><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+        <td class="edit-buttons"><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -2,13 +2,18 @@
 <html>
 <head>
   <title>CodeFirstProject</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+ <!--  <%= stylesheet_link_tag 'bootstrap/css/bootstrap.css' %> -->
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<div class="header">
+<img style="width: 100%; margin: 0px;" src="http://www.freewebheaders.com/wordpress/wp-content/gallery/food/various-spices-and-herbs-website-header.jpg">
+</div>
+<div id="container">
 <%= yield %>
-
+</div>
 </body>
 </html>
